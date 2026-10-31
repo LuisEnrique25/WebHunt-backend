@@ -2,7 +2,6 @@ const express = require('express');
 
 const app = express();
 
-// Middlewares
 app.use(express.json());
 
 // Routes
@@ -12,5 +11,8 @@ app.get('/', (req, res) => {
         message: 'WebHunt API is running'
     });
 });
+
+
+// Middlewares
 
 module.exports = app;
