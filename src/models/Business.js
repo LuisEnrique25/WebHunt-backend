@@ -51,14 +51,14 @@ const Business = sequelize.define('business', {
         allowNull: true
     },
 }, {
-  tableName: 'businesses',
-  underscored: true,
-  indexes: [
-    {
-      unique: true,
-      fields: ['osmType', 'osmId'],
-    },
-  ],
-});
+        tableName: 'businesses',
+        underscored: true,
+        indexes: [
+            {
+                unique: true,
+                fields: ['osmType', 'osmId'],
+            },
+        ],
+    });
 
 module.exports = Business;
